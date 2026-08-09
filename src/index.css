@@ -1,0 +1,86 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@plugin "daisyui/theme" {
+  name: "console";
+  default: true;
+  prefersdark: false;
+  color-scheme: light;
+  --color-base-100: #F6F4EE;
+  --color-base-200: #EEEBE1;
+  --color-base-300: #E2DED2;
+  --color-base-content: #12161F;
+  --color-primary: #12161F;
+  --color-primary-content: #F6F4EE;
+  --color-secondary: #E8A33D;
+  --color-secondary-content: #12161F;
+  --color-accent: #3FA9A3;
+  --color-accent-content: #F6F4EE;
+  --color-neutral: #12161F;
+  --color-neutral-content: #F6F4EE;
+  --color-info: #3FA9A3;
+  --color-success: #4A9B6E;
+  --color-warning: #E8A33D;
+  --color-error: #C4573B;
+  --radius-selector: 0.5rem;
+  --radius-field: 0.5rem;
+  --radius-box: 1rem;
+  --border: 1px;
+}
+
+@theme {
+  --font-display: "Space Grotesk", "Inter", sans-serif;
+  --font-sans: "Inter", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+
+  --color-ink: #12161F;
+  --color-ink-2: #1B212C;
+  --color-ink-3: #262E3D;
+  --color-paper: #F6F4EE;
+  --color-paper-2: #FFFFFF;
+  --color-teal: #3FA9A3;
+  --color-teal-light: #6FC7C1;
+  --color-amber: #E8A33D;
+  --color-amber-light: #F3BE6F;
+  --color-slate: #6B7280;
+  --color-slate-light: #94A3B8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background-color: var(--color-amber);
+  color: var(--color-ink);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+*:focus-visible {
+  outline: 2px solid var(--color-teal);
+  outline-offset: 2px;
+}
