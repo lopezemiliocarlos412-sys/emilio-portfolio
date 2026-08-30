@@ -23,7 +23,6 @@ const heroItem = {
 export default function Home() {
   return (
     <>
-      {/* Hero */}
       <section className="relative overflow-hidden bg-ink text-paper">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(63,169,163,0.15),transparent_45%),radial-gradient(circle_at_80%_0%,rgba(232,163,61,0.12),transparent_40%)]" />
 
@@ -77,7 +76,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Differentiator strip */}
       <section className="border-b border-ink/10 bg-paper-2">
         <div className="mx-auto max-w-6xl px-6 py-10">
           <p className="text-center font-mono text-xs uppercase tracking-widest text-ink/40">
@@ -102,7 +100,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services preview */}
       <section className="mx-auto max-w-6xl px-6 py-24">
         <Reveal>
           <SectionHeading
@@ -128,7 +125,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Featured projects */}
       <section className="border-t border-ink/10 bg-paper-2">
         <div className="mx-auto max-w-6xl px-6 py-24">
           <Reveal>
@@ -148,7 +144,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA */}
       <section className="mx-auto max-w-6xl px-6 py-24">
         <Reveal>
           <div className="rounded-box bg-ink px-8 py-16 text-center text-paper sm:px-16">

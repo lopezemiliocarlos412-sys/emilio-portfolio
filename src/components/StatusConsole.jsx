@@ -9,9 +9,7 @@ export default function StatusConsole() {
           <span className="h-2.5 w-2.5 rounded-full bg-amber/70" />
           <span className="h-2.5 w-2.5 rounded-full bg-teal/70" />
         </div>
-        <span className="text-[11px] uppercase tracking-widest text-paper/40">
-          store_ops.console
-        </span>
+        <span className="text-[11px] uppercase tracking-widest text-paper/40">store_ops.console</span>
       </div>
 
       <div className="space-y-4 px-5 py-6">
@@ -32,9 +30,7 @@ export default function StatusConsole() {
           ))}
         </div>
 
-        <p className="pt-1 text-xs leading-relaxed text-paper/35">
-          // real-time discipline, applied to storefront operations
-        </p>
+        <p className="pt-1 text-xs leading-relaxed text-paper/35">// real-time discipline, applied to storefront operations</p>
       </div>
     </div>
   )

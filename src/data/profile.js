@@ -9,7 +9,7 @@ export const profile = {
   location: 'San Carlos City, Negros Occidental, Philippines',
   email: 'emil46284@gmail.com',
   phone: '+63 963 424 4771',
-  resumeUrl: '/assets/Lopez_Emilio_Resume_ATS.pdf',
+  resumeUrl: '/resume.pdf',
   socials: {
     linkedin: 'https://linkedin.com/in/emilioc-lopez',
   },

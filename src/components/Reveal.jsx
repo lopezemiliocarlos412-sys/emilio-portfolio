@@ -12,10 +12,6 @@ const item = {
   show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] } },
 }
 
-/**
- * Fades/slides content in once it scrolls into view.
- * Pass `stagger` to animate direct children one after another (e.g. a card grid).
- */
 export default function Reveal({ children, stagger = false, className = '', delay = 0 }) {
   if (stagger) {
     return (

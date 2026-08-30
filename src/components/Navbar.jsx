@@ -14,9 +14,7 @@ const links = [
 ]
 
 const navLinkClass = ({ isActive }) =>
-  `text-sm font-medium transition-colors ${
-    isActive ? 'text-amber' : 'text-ink/70 hover:text-ink'
-  }`
+  `text-sm font-medium transition-colors ${isActive ? 'text-amber' : 'text-ink/70 hover:text-ink'}`
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
@@ -26,11 +24,9 @@ export default function Navbar() {
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <NavLink to="/" className="flex items-center gap-2" onClick={() => setOpen(false)}>
           <span className="flex h-8 w-8 items-center justify-center rounded-md bg-ink font-mono text-sm font-semibold text-paper">
-            {profile.name.charAt(0)}
+            {profile.shortName.charAt(0)}
           </span>
-          <span className="font-display text-lg font-semibold tracking-tight">
-            {profile.name}
-          </span>
+          <span className="font-display text-lg font-semibold tracking-tight">{profile.shortName}</span>
         </NavLink>
 
         <div className="hidden items-center gap-8 lg:flex">
@@ -86,9 +82,7 @@ export default function Navbar() {
                     end={link.to === '/'}
                     onClick={() => setOpen(false)}
                     className={({ isActive }) =>
-                      `block rounded-md px-3 py-2 text-sm font-medium ${
-                        isActive ? 'bg-ink text-paper' : 'text-ink/80 hover:bg-ink/5'
-                      }`
+                      `block rounded-md px-3 py-2 text-sm font-medium ${isActive ? 'bg-ink text-paper' : 'text-ink/80 hover:bg-ink/5'}`
                     }
                   >
                     {link.label}
