@@ -28,7 +28,7 @@ function getVariant(offset) {
   return byDistance[abs]
 }
 
-export default function Carousel3D({ items, ariaLabel = 'Carousel' }) {
+export default function Carousel3D({ items, ariaLabel = 'Carousel', type = 'excel', onWatch }) {
   const [active, setActive] = useState(0)
   const length = items.length
   const isPaused = useRef(false)
@@ -77,7 +77,7 @@ export default function Carousel3D({ items, ariaLabel = 'Carousel' }) {
               transition={{ type: 'spring', stiffness: 260, damping: 30 }}
               onClick={() => !isActive && goTo(index)}
             >
-              <MediaCard item={item} isActive={isActive} />
+              <MediaCard item={item} type={type} isActive={isActive} onWatch={onWatch} />
             </motion.div>
           )
         })}

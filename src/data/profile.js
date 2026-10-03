@@ -25,9 +25,9 @@ export const heroStats = [
 export const heroConsole = {
   status: 'Operational',
   lines: [
-    { label: 'platform_built', value: 'eTurismo (Gov)' },
-    { label: 'response_time', value: '24h -> 14h (-42%)' },
-    { label: 'core_tools', value: 'Shopify, Sheets, Notion' },
+    { label: 'platform built', value: 'eTurismo (Gov)' },
+    { label: 'response time', value: '24h -> 14h (-42%)' },
+    { label: 'core tools', value: 'Capcut, Notion, Canva' },
     { label: 'focus', value: 'Listings + Data QA' },
   ],
 }

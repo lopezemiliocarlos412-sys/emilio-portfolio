@@ -1,48 +1,53 @@
-// Add a real link for each item:
-// - videos: a YouTube/Loom/Vimeo URL, or a path like /videos/clip.mp4 (place the file in /public/videos)
-// - excel: a path like /files/tracker.xlsx (place the file in /public/files) or a Google Sheets share link
+// Excel projects: banner images are already in public/images/excel/.
+// Add a real `href` to each (a file path in public/files/, or a Google
+// Sheets share link) to activate the "View file" button.
 
-export const mediaItems = [
+export const excelProjects = [
+  {
+    id: 'excel-keyword-bucket-analysis',
+    title: 'Keyword Bucket Analysis',
+    subtitle: 'Sorting search data into title, bullets, and backend keywords.',
+    banner: '/images/excel/keyword-bucket-analysis.jpg',
+    href: '/files/PPC keyword Mock Up.csv',
+  },
+  {
+    id: 'excel-asin-teardown',
+    title: 'ASIN Teardown & Listing Rebuild',
+    subtitle: 'Reverse-engineering a top seller, keyword by keyword.',
+    banner: '/images/excel/asin-teardown-rebuild.jpg',
+    href: '/files/project1_single_asin_teardown(Analysis & Recommendations).csv',
+  },
+  {
+    id: 'excel-ppc-keyword-research',
+    title: 'Amazon PPC & Keyword Research',
+    subtitle: 'Data-backed listings that rank and convert.',
+    banner: '/images/excel/amazon-ppc-keyword-research.jpg',
+    href: '/files/Keyword Bucket Analysis Title, Bullets & Backend Mapping (Raw Exported Keywords (Helium))(Raw Exported Keywords (Helium)).csv',
+  },
+]
+
+// Content & editing projects: drop your real .mp4 files into public/videos/
+// using the exact filenames below (or update the `video` path to match
+// whatever you name them). The card auto-shows the video's own first frame
+// as a thumbnail, so no separate poster image is needed.
+
+export const contentProjects = [
   {
     id: 'video-listing-walkthrough',
-    type: 'video',
-    title: 'Product Listing Walkthrough',
-    subtitle: "Screen-recorded demo of optimizing a listing's title, bullets, and images for search.",
-    href: '',
+    title: 'Dont Half Ass it | Short-Form Video Edit',
+    subtitle: "A fast-paced edit built for hook, retention, and pacing on social.",
+    video: '/videos/Short_Form_Video_1.mov',
   },
   {
     id: 'video-eturismo-demo',
-    type: 'video',
-    title: 'eTurismo Admin Panel Demo',
-    subtitle: "A walkthrough of the tourism platform's data entry and validation workflow.",
-    href: '',
+    title: 'It Is Easy to Give Up! | Short-Form Video Edit',
+    subtitle: "A talking-head short-form video edited for a personal, authentic feel",
+    video: '/videos/Short-Form-Video-2.mp4',
   },
   {
     id: 'video-case-routing',
-    type: 'video',
-    title: 'Order & Case Routing Process',
-    subtitle: 'How cases get sorted, prioritized, and routed for faster response times.',
-    href: '',
-  },
-  {
-    id: 'excel-audit-reconciliation',
-    type: 'excel',
-    title: 'Audit Reconciliation Template',
-    subtitle: 'Formula-driven template that cross-checks totals and flags discrepancies.',
-    href: '',
-  },
-  {
-    id: 'excel-inventory-tracker',
-    type: 'excel',
-    title: 'Inventory & Order Tracker',
-    subtitle: 'A tracking sheet for monitoring stock levels and order status at a glance.',
-    href: '',
-  },
-  {
-    id: 'excel-case-tracker',
-    type: 'excel',
-    title: 'Case Prioritization Tracker',
-    subtitle: 'Sheet-based system for sorting and routing support tickets by urgency.',
-    href: '',
+    title: 'UGC Tiktok Ad | FIFINE A6V',
+    subtitle: 'Streamer or Gamer this microphone is your best Partner!',
+    video: '/videos/ssstik.io_@yourcomputersetup_1791015559545.mp4',
   },
 ]
